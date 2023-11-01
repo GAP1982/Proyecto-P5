@@ -1,0 +1,90 @@
+body {
+  background-image: url(./imagenes/ACNH.jpg!d);
+  background-size: cover;
+  background-color: #344a72;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.registro {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: rgb(209 250 229);
+  border-radius: 30px;
+ 
+  
+
+}
+
+.loguearse {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: rgb(209 250 229);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #207761;
+  color: white;
+  font-size: 18px;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.p2 {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.position-favorite{
+  position: relative;
+  top: 9px;
+  left: 0px;
+  color: rgb(143, 143, 113);
+  font-size: x-large;
+}
+
+.favorite{
+  color: red;
+}

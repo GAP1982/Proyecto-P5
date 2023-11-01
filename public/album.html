@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./imagenes/favicon-16x16.png">
+  
+
+</head>
+
+<body
+    class="bg-[url('https://get.wallhere.com/photo/Nintendo-Animal-Crossing-Animal-Crossing-New-Horizons-pattern-minimalism-simple-background-Video-Game-Art-video-games-2248088.jpg')]">
+    <div class="flex flex-row h-screen">
+        <div class="bg-emerald-400 w-1/5 h-100" id="sidebar">
+            <div class="flex flex-row border-b-slate-100">
+                <img src="https://acnhcdn.com/latest/NpcIcon/hip04.png" alt="user" class="rounded-full h-20" />
+                <h3 class="text-white font-semibold align-middle pl-3 pt-3 py-6">
+                    Pipo
+                </h3>
+            </div>
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50">
+                <a href="home.html">Other Albums</a>
+            </div>
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50">
+                <a href="editarForm.html">Edit Album</a>
+            </div>
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50">
+                <a href="addsongs.html">Add Song</a>
+            </div>
+
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50"
+                onclick="window.location.href = './login.html'">
+                Log Out
+            </div>
+        </div>
+
+        <section class="flex flex-col text-center items-center w-full" class="edit-modal">
+            <div>
+                <h2 class="mb-3 p-1 m-10 text-left text-6xl mt-10 italic text-black ">Bubblegum</h2>
+                <p class="text-left ml-3 mr-3 p-3 rounded-lg bg-emerald-100 text-grey shadow-sm text-gray-700">
+                    Tota-pop (Bublegum K.K. en inglés) es una de las canciones de Totakeke en ACNL, se puede conseguir
+                    en la T&N o en los conciertos de Totakeke los sábados a partir de las 20:00h, solo te la dara si se
+                    la pides como primera canción. En la portada salen Natacha y Lali.
+                </p>
+            </div>
+         <div >
+                
+                <h2 class="mb-3 p-3 text-center text-6xl mt-10 italic text-emerald-500 border-2 border-rose-200 rounded-lg bg-emerald-100 text-emerald-400">Canciones</h2>
+         </div>
+
+            <div class="bg-emerald-200 rounded p-2 mt-6 ml-8 rounded-lg shadow-md flex  ">
+                <span class="text-lg font-bold">1</span>
+                <span class="ml-4">Bubblegum</span>
+                <span class="ml-4">1:31</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 ml-4 cursor-pointer" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 6l3-3m0 0l3 3m-3-3v10a2 2 0 002 2h8a2 2 0 002-2V3a1 1 0 00-1-1H5a1 1 0 00-1 1z" />
+                </svg>
+                <a href="https://www.youtube.com/watch?v=mIS6qIVOWxI"
+                    class="bg-rose-300 text-black px-4 py-2 rounded-lg ml-4 hover:bg-rose-400">YouTube</a>
+            </div>
+        </section>
+    </div>
+    <script src="./album.html"></script>
+
+
+</body>
+
+</html>

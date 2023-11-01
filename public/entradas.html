@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./imagenes/favicon-16x16.png">
+</head>
+
+<body
+    class="bg-[url('https://get.wallhere.com/photo/Nintendo-Animal-Crossing-Animal-Crossing-New-Horizons-pattern-minimalism-simple-background-Video-Game-Art-video-games-2248088.jpg')]">
+    <div class="container mx-auto">
+        <div>
+            <h1 class=" text-7xl text-gray-900 p-1 rounded-full mt-3 mb-4 text-center p-5">
+                Totakeke Live</h1>
+        </div>
+        <div
+            class=" bg-emerald-100 p-4 rounded-full shadow-md flex flex-col md:flex-row justify-between items-center mb-4">
+            <div>
+                <h2 class="text-lg font-semibold">Fecha: 25 de octubre de 2023</h2>
+                <p>Ciudad: New York</p>
+            </div>
+            <div class="bg-blue-300 text-white px-4 py-2 rounded-full hover:bg-rose-500 mt-2 md:mt-0 md:ml-4">
+                <button class="text-teal-50 text-center ticketButton" id="New York"
+                    onclick="getTickets('New York')">Comprar Tickets
+                </button>
+            </div>
+        </div>
+        <div
+            class=" bg-emerald-100 p-4 rounded-full shadow-md flex flex-col md:flex-row justify-between items-center mb-4">
+            <div>
+                <h2 class="text-lg font-semibold">Fecha: 28 de octubre de 2023</h2>
+                <p>Ciudad: Los Angeles</p>
+            </div>
+            <div class="bg-blue-300 text-white px-4 py-2 rounded-full hover:bg-rose-500 mt-2 md:mt-0 md:ml-4">
+                <button class="text-teal-50 text-center ticketButton" id="Los Angeles"
+                    onclick="getTickets('Los Angeles')">Comprar Tickets
+                </button>
+            </div>
+        </div>
+        <div
+            class=" bg-emerald-100 p-4 rounded-full shadow-md flex flex-col md:flex-row justify-between items-center mb-4">
+            <div>
+                <h2 class="text-lg font-semibold">Fecha: 2 de Noviembre de 2023</h2>
+                <p>Ciudad: Chicago</p>
+            </div>
+            <div class="bg-blue-300 text-white px-4 py-2 rounded-full hover:bg-rose-500 mt-2 md:mt-0 md:ml-4">
+                <button class="text-teal-50 text-center ticketButton" id="Chicago"
+                    onclick="getTickets('Chicago')">Comprar Tickets
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="./entradas.js"></script>
+</body>
+
+</html>

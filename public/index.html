@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./imagenes/favicon-16x16.png">
+</head>
+
+<body
+    class="bg-[url('https://get.wallhere.com/photo/Nintendo-Animal-Crossing-Animal-Crossing-New-Horizons-pattern-minimalism-simple-background-Video-Game-Art-video-games-2248088.jpg')] h-screen">
+    <div class="flex flex-row h-100">
+        <div class="bg-emerald-400 w-1/5 h-100" id="sidebar">
+            <div class="flex flex-row border-b-slate-100">
+                <img class="rounded-full h-20" src="https://acnhcdn.com/latest/NpcIcon/hip04.png" alt="'user" />
+                <h3 id="user-name" class="text-white font-semibold align-middle pl-3 pt-3 py-6">
+                    Pipo
+                </h3>
+            </div>
+
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50">
+                <a href=""> Add Album</a>
+            </div>
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50">
+                <a href="./entradas.html" target="_blank">Tour Dates</a>
+            </div>
+            <div class="text-white font-semibold pt-6 py-6 text-center hover:bg-emerald-900 border-2 border-b-slate-50"
+                onclick="window.location.href = './login.html'">
+                Log Out
+            </div>
+        </div>
+        <div class="flex flex-col text-center items-center w-full" class="edit-modal">
+            <h1 class="mb-3 p-3 text-center text-6xl mt-10 italic text-emerald-500 border-2 border-rose-200 rounded-lg bg-emerald-100 text-emerald-400">Totakeke</h1>
+            <p class="text-left ml-3 p-6 rounded-lg bg-emerald-100 text-grey shadow-sm text-gray-700">
+                Totakeke es un músico relajado, hecho que se refleja por su estado calmado y su tono suave y
+                tranquilo de
+                hablar, usando con frecuencia palabras como "hombre", "lejos" y "maravilloso" en sus diálogos. Es
+                apasionado por su oficio y el dinero no le concierne; afirmando que, aunque numerosos "gatos gordos
+                de
+                la industria" intentan capitalizar su música, él solo desea que esta sea gratis para todos. Debido a
+                esto, regala copias gratuitas de sus canciones a cualquiera que esté dispuesto a escuchar sus
+                canciones.
+                Si bien las canciones de Totakeke se pueden comprar a partir de Animal Crossing: New Leaf, en Happy
+                Home
+                Designer él afirma que dona sus ganancias a "los niños", ya que prefiere ganar Bayas a través de
+                medios
+                más típicos.
+                También en New Leaf, se presenta bajo el alter ego DJ KeKe, que muestra un nuevo lado de la
+                personalidad
+                de Totakeke, que en lugar de ser un músico relajado, se muestra más extrovertido y activo,
+                atendiendo al
+                llamado de la "vida de fiesta", saltando e incluso bailando mientras toca música.
+            </p>
+            <h2 class="mb-3 p-3 text-center text-6xl mt-10 italic text-emerald-600 border-2 border-rose-200 rounded-lg bg-emerald-100 text-emerald-400">Albums</h2>
+            <div class="flex flex-row ml-3 mt-1 w-1/2">
+                <div class="0 ml-10 p-8">
+                    <div class="flex, flex-row, justify-center">
+                        <img class="mb-4 rounded-lg w-80 img-album" src="./imagenes/Bubblegum_K.K._NH_Texture.png" />
+                    </div>
+                    <div>
+                        <a href="./album.html" class="p-1 bg-rose-400 rounded">
+                            Bubblegum</a>
+                    </div>
+                </div>
+                <div class="0 ml-10 p-8">
+                    <div>
+                        <img class="mb-4 rounded-lg w-80 img-album" src="./imagenes/K.K._Disco_NH_Texture (1).png" />
+                    </div>
+                    <div>
+                        <a href="" class="p-1 bg-rose-400 rounded">
+                            Tota Disco</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
