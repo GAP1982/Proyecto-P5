@@ -1,4 +1,4 @@
-const Album = require('./Album')
-const User = require('./User')
+const Album = require('./Album.js')
+const User = require('./User.js')
 
 module.exports = {Album, User}

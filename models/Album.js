@@ -7,7 +7,7 @@ const AlbumSchema = new mongoose.Schema(
             required: [true, 'Must enter a title'],
             enum: {
                 values: ['Bubblegum', 'Tota Disco'],
-                message: 'Your totle is not a Totakeke album'
+                message: 'Your title is not a Totakeke album'
             }
         },
         description: {
