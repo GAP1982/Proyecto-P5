@@ -7,7 +7,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const uri = process.env.URI
 const path = require('path');
-const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser')
 const { readSync } = require('fs')
 
 app.use(express.static('public', {

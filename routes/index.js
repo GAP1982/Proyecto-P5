@@ -4,6 +4,8 @@ const { User, Album } = require('../models')
 const bcrypt = require('bcrypt')
 const userRoutes = require('./user')
 const bandRoutes = require('./band')
+const jwt = require('jsonwebtoken')
+const secret = 'Hello'
 
 router.use('/user', userRoutes)
 router.use('/band', bandRoutes)
