@@ -21,7 +21,7 @@ app.use(express.static('public', {
 app.use(express.json());
 app.use(cookieParser());
 app.use("health", (req, res) => res.sendStatus(200));
-app.use('/', routes)
+app.use('/', () => routes);
 
 mongoose.connect(uri).
 then(() => {
