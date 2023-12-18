@@ -2,29 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./imagenes/favicon-16x16.png">
 </head>
 
-<body>
-    <div class="loguearse">
-        <h1>Ingresar</h1>
-        <form>
-            <label>Email</label>
-            <input type="email" placeholder="Ingrese su email" />
-            <label>Contraseña</label>
-            <input type="password" placeholder="Ingrese su clave " />
-            <input type="button" value="ingresar" />
-        </form>
-    </div>
-    <p class="p2"> ¿Aún no sos miembro? <a href=""> Registrate</a>
-    </p>
+<body
+    class="bg-[url('https://get.wallhere.com/photo/Nintendo-Animal-Crossing-Animal-Crossing-New-Horizons-pattern-minimalism-simple-background-Video-Game-Art-video-games-2248088.jpg')]">
+
+
+
+    <div class="w-3/4 p-8fy- flex justify-center items-center h-screen w-full ">
+        <div class="bg-emerald-100 p-8 rounded-lg shadow-lg max-w-md w-full border-2 border-rose-200 ">
+            <h1 class=" text-center  mb-6 text-emerald-500 text-4xl ">Ingresar</h1>
+            <form>
+
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold">Email</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="email" placeholder="Ingrese su email" required/>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold" for="duracion">Contraseña</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="password" placeholder="Ingrese su contraseña" required/>
+                </div>
+                
+                <div class="flex mb-6 justify-between">
+                    <button type="button"
+                        class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        <a href="./index.html" target="_blank">acceder</a>
+                    </button>
+                </div>
+                <p class="text-center"> ¿Aún no sos miembro? <a href="./register.html"> Registrate</a>
+                </p>
+            </form>
+        </div>
+        
+    
+    
+    <script src="./login.js"></script>
 </body>
-<script src="./login.js"></script>
 
 </html>

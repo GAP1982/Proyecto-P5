@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { redirect } from '../public/utils/utils.js'
+import { redirect } from '../utils/utils.js'
 const objectToSend = {email: "", password: "" }
 
 function getInputValues(){
@@ -30,7 +30,7 @@ const loginUser = async (e)=> {
     }
 }
 
-const LoginButton = document.getElementById('Login')
+const LoginButton = document.getElementById('login')
 LoginButton.addEventListener('click', (e)=>loginUser(e))
 
 

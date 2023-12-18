@@ -2,56 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./imagenes/favicon-16x16.png">
 </head>
 
-<body>
-    <div class="registro">
-        <h1> Registrate </h1>
-        <form>
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="Ingresa tu nombre" />
-            </div>
-            <div>
-                <label> Apellido</label>
-                <input type="text" placeholder="Ingresa tu apellido" />
-            </div>
-            <div>
-                <label>Email</label>
-                <input type="email" placeholder="Ingresa tu mail" />
-            </div>
-            <div>
-                <label>Contraseña</label>
-                <input type="password" placeholder="Ingresa tu contraseña" />
-            </div>
-            <div>
-                <label>Confirma tu contraseña</label>
-                <input type="password" placeholder="confirma contraseña" />
-            </div>
-            <input type="button" value="Registrarse" />
-        </form>
-        <div>
-            <p>
-                Al hacer clic en el botón, aceptas nuestros <br />
-                <a href="#">Terminos y Condiciones</a>, y <a href="#">Politicas de privacidad</a>
-            </p>
+<body
+    class="bg-[url('https://get.wallhere.com/photo/Nintendo-Animal-Crossing-Animal-Crossing-New-Horizons-pattern-minimalism-simple-background-Video-Game-Art-video-games-2248088.jpg')]">
+
+
+
+    <div class="w-3/4 p-8fy- flex justify-center items-center h-screen w-full ">
+        <div class="bg-emerald-100 p-3 rounded-lg shadow-lg max-w-md w-full border-2 border-blue-300 ">
+            <h1 class=" text-center  mb-6 text-emerald-500 text-4xl ">Registrate</h1>
+            <form>
+
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold">Nombre</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="text" placeholder="Ingrese su nombre" required/>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold">Apellido</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="text" placeholder="Ingrese su apellido" required/>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold" >Email</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="email" placeholder="Ingrese su email" required/>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold" >Contraseña</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="password" placeholder="Ingrese su contraseña" required/>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-center text-rose-400 mb-2 font-bold" >Confirma tu contraseña</label>
+                    <input
+                        class="w-full px-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+                        type="password" placeholder="Ingrese su contraseña" required/>
+                </div>
+                
+                <div class="flex mb-6 justify-between">
+                    <button
+                        class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        <a href=""></a>
+                        Ingresar
+                    </button>
+                </div>
+                <p class="text-center"> ¿Ya sos miembro? <a href="./login.html">Ingresa</a>
+                </p>
+            </form>
         </div>
-    </div>
-
-    <p class="p2">
-        ¿Ya sos miembro?
-        <a href="login.html">Ingresar</a>
-    </p>
+        
+    
+    
     <script src="./register.js"></script>
-
-
 </body>
 
 </html>
