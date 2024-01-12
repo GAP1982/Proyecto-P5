@@ -1,4 +1,5 @@
-import axios from 'axios'
+import axios from './lib/axios.js';
+//const axios = require('axios')
 import {onLoad, redirect, logOut} from '../utils/utils.js'
 
 const fullUser =await onLoad()
@@ -24,7 +25,7 @@ const addAlbum = async (e) => {
             icon: 'success',
             confirmButtonText: 'ok'
         })
-        window.location.href='./index.html'
+        window.location.href='index.html'
     }
     catch(error){
         swal({
