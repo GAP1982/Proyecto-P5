@@ -1,4 +1,4 @@
-const { default: axios } = require("axios")
+const { default: axios } = require('axios')
 const { redirect } = require("express/lib/response")
 
 const onLoad = async() => {
@@ -19,7 +19,7 @@ const logOut = async() => {
     redirect('./login.html')
 }
 
-const redirect = (url) => {window.location.assign(url)}
+redirect = (url) => {window.location.assign(url)}
 const goBack = (e, to) => {
     e.preventDefault()
     redirect(to)
