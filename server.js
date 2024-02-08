@@ -12,16 +12,21 @@ const { readSync } = require('fs')
 
 app.use(express.static('public', {
   setHeaders: (res, path) => {
+	res.setHeader('Access-Control-Allow-Origin', '* ');
     if (path.endsWith('.js')) {
+	  console.log('Setting JS header');
       res.setHeader('Content-Type', 'application/javascript');
-    }
+    } else {
+		res.setHeader('Content-Type', 'application/json;charset=UTF-8');
+		console.log('Setting NON JS header');
+	}
   }
 }));
 
 app.use(express.json());
 app.use(cookieParser());
 app.use("health", (req, res) => res.sendStatus(200));
-app.use('/', () => routes);
+app.use('/', routes);
 
 const connectToMongo = async()=> {
   try{
