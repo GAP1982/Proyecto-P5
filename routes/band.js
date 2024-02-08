@@ -14,7 +14,6 @@ router.get('/', async (req,res,next)=>{
 
 router.post('/', async (req,res,next)=>{
     try{
-        res.header("Access-Control-Allow-Origin", "*")
         await Album.create(req.body)
         res.sendStatus(201)
     }
@@ -29,7 +28,7 @@ router.get('/:id', async (req,res,next)=>{
         res.status(200).send({data:album})
     }
         catch(error){
-            res.status(404).send({error:'Could nor find this album'})
+            res.status(404).send({error:'Could not find this album'})
         }
     })
 

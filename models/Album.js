@@ -21,7 +21,7 @@ const AlbumSchema = new mongoose.Schema(
             },
         },
         img: { type: String },
-        yearOfRealease: { type: Number, required: [true, 'Must enter a release year'], },
+        year: { type: Number, required: [true, 'Must enter a release year'], },
         songs: [{ "title": String, "duration": String, "url": String }]
     },
     {

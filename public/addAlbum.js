@@ -31,8 +31,18 @@ function albumData(e) {
 
 const addAlbum = async (e) => {
   e.preventDefault();
+
+  let axiosConfig = {
+	headers: {
+		'Content-Type': 'application/json;charset=UTF-8',
+		"Access-Control-Allow-Origin": "*",
+	}
+  };
+  
   try {
-    await axios.post("/band", objectToSend);
+    await axios.post("/band", objectToSend, axiosConfig).then((res) => {
+		console.log("RESPONSE RECEIVED: ", res);
+	  })
     swal({
       title: "success",
       text: "Se ha añadido un album",
@@ -41,6 +51,7 @@ const addAlbum = async (e) => {
     }),
       (window.location.href = "./index.html");
   } catch (error) {
+	console.log("AXIOS ERROR: ", error);
     swal({
         title: 'Error!',
         text: `${error}`,
