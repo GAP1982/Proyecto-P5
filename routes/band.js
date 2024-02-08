@@ -14,6 +14,7 @@ router.get('/', async (req,res,next)=>{
 
 router.post('/', async (req,res,next)=>{
     try{
+        res.header("Access-Control-Allow-Origin", "*")
         await Album.create(req.body)
         res.sendStatus(201)
     }
