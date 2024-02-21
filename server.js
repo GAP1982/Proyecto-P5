@@ -16,10 +16,7 @@ app.use(express.static('public', {
     if (path.endsWith('.js')) {
 	  console.log('Setting JS header');
       res.setHeader('Content-Type', 'application/javascript');
-    } else {
-		res.setHeader('Content-Type', 'application/json;charset=UTF-8');
-		console.log('Setting NON JS header');
-	}
+    }
   }
 }));
 
