@@ -21,7 +21,7 @@ const objectToSend = {
   title: "",
   year: "",
   description: "",
-  image: "",
+  coverimg: "",
 };
 
 function albumData(e) {
@@ -40,16 +40,11 @@ const addAlbum = async (e) => {
   };
   
   try {
+	console.log(objectToSend)
     await axios.post("/band", objectToSend, axiosConfig).then((res) => {
 		console.log("RESPONSE RECEIVED: ", res);
 	  })
-    swal({
-      title: "success",
-      text: "Se ha añadido un album",
-      icon: "success",
-      button: "ok",
-    }),
-      (window.location.href = "./index.html");
+    (window.location.href = "./index.html");
   } catch (error) {
 	console.log("AXIOS ERROR: ", error);
     swal({
